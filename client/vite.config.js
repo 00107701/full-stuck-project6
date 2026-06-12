@@ -6,11 +6,6 @@ export default defineConfig({
   appType: 'spa',
   server: {
     port: 5173,
-    proxy: {
-      '/auth':      { target: 'http://localhost:3001', changeOrigin: true },
-      '/travelers': { target: 'http://localhost:3001', changeOrigin: true },
-      '/journal':   { target: 'http://localhost:3001', changeOrigin: true },
-      '/admin':     { target: 'http://localhost:3001', changeOrigin: true },
-    },
+   
   },
 });
